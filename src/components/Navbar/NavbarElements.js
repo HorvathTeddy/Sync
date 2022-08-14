@@ -7,7 +7,7 @@ import { Link as LinkR } from 'react-router-dom'
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    margin-top: -80px    
+    /*margin-top: -80px;*/
     display: flex;
     align-items: center
     font-size: 1rem;
@@ -41,3 +41,19 @@ export const NavLogo = styled(LinkR)`
     font-weight: bold;
     text-decoration: none;
 `
+
+export const MobileIcon = style.div`
+    display: none;
+
+    @media screen and (max-width: 768px)
+    {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+`
+
