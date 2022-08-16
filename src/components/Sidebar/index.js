@@ -20,6 +20,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 <SidebarRoute to='/login'>
                     Log in 
                 </SidebarRoute>
+                <br />
                 <SidebarRoute to='/signup'>
                     Sign up
                 </SidebarRoute>
