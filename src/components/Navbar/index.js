@@ -26,10 +26,10 @@ const Navbar = ({ toggle }) => {
                         </NavLinks>
                     </NavItem>
                     <NavBtn>
-                        <NavBtnLink to='/login'>Log in</NavBtnLink>
+                        <NavBtnLink style={{background: 'black', border: '#white solid 1px', borderRadius: '5px'}} to='/signin'>Sign in</NavBtnLink>
                     </NavBtn>
                     <NavBtn>
-                        <NavBtnLink to='/signup'>Sign up</NavBtnLink>
+                        <NavBtnLink to='/createaccount'>Create account</NavBtnLink>
                     </NavBtn>
                 </NavMenu>
             </NavbarContainer>
