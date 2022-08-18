@@ -8,7 +8,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
     }
 `
-// info
+// info or something
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
