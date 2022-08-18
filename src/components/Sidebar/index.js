@@ -17,11 +17,11 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to='/login'>
+                <SidebarRoute to='/signin' style={{color: 'white', background: 'black', border: '1px solid white', borderRadius: '10px'}}>
                     Sign in
                 </SidebarRoute>
                 
-                <SidebarRoute to='/signup'>
+                <SidebarRoute to='/createaccount'>
                     Create account
                 </SidebarRoute>
             </SideBtnWrap>
