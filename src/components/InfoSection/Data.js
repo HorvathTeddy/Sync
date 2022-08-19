@@ -1,5 +1,6 @@
 import img1 from '../../images/svg-1.svg'
-import img2 from '../../images/svg-2.svg'
+//import img2 from '../../images/svg-2.svg'
+import HHD from '../../images/hiphip-dancing.jpg'
 
 
 export const homeObjOne = 
@@ -10,7 +11,7 @@ export const homeObjOne =
     description: 'Sign up as a producer, lyricist, or both and start collaborating with artists on the platform!',
     alt: 'Guitarist',
     imgStart: true,
-    img: img1   
+    img: HHD   
 }
 
 export const homeObjTwo = 
@@ -21,7 +22,7 @@ export const homeObjTwo =
     description: 'Sync is made for artists',
     alt: 'link',
     imgStart: false,
-    img: img2   
+    img: HHD  
 }
 
 
