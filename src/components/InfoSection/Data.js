@@ -1,6 +1,6 @@
 import img1 from '../../images/svg-1.svg'
 import img2 from '../../images/svg-2.svg'
-import img3 from '../../images/svg-3.svg'
+
 
 export const homeObjOne = 
 {
@@ -24,13 +24,4 @@ export const homeObjTwo =
     img: img2   
 }
 
-export const homeObjThree = 
-{
-    id: 'about',
-    topLine: 'Kickstart your music career',
-    headLine: 'We are dedicated to helping you find music partners.  Bringing people together is the soul of music, and we want to cherish that.',
-    description: 'Sign up as a producer, lyricist, or both and start collaborating with musicians on the platform!',
-    alt: 'link',
-    imgStart: false,
-    img: img3   
-}
+

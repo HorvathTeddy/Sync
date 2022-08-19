@@ -34,8 +34,8 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart}) =
                         {description}
                     </Subtitle>
                     <BtnWrap>
-                        <Button to='home' smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                          Get started
+                        <Button to='services' smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                          Learn more
                         </Button>
                     </BtnWrap>
                 </TextWrapper>
