@@ -49,7 +49,7 @@ export const ServicesCard = styled.div`
     transition: all 0.2s ease-in-out;
     color: #000;
 
-    &:hover{
+    &:hover {
         transform: scale(1.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
@@ -72,7 +72,7 @@ export const ServicesH1 = styled.h1`
     border: 3px solid #fff;
 
     @media screen and (max-width: 480px){
-     font-size: 2rem;
+        font-size: 2rem;
     }
 `
 
