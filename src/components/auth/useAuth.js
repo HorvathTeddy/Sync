@@ -1,11 +1,12 @@
 import React, { createContext, useState, useEffect } from "react";
 import firebase from 'firebase/compat/app';
+import { initializeApp } from "firebase/app"
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import firebaseConfig from "../firebase.config";
 import axios from 'axios';
 import { useHistory } from "react-router";
-firebase.initializeApp(firebaseConfig)
+
+initializeApp(firebaseConfig)
 
 let Context = null
 const { Provider, Consumer } = Context = createContext()
