@@ -1,30 +1,14 @@
 import React, { useState, useContext } from 'react';
 import './login.css'
 import InputItem from '../InputItem/InputItem';
-import { Link, Navigate, useNavigate, useLocation, useParams } from 'react-router-dom';
+import { Link, withRouter, Redirect, useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../useAuth';
 import Loading from '../../utils/Loading';
 import GoogleSignIn from '../InputItem/GoogleSignIn';
 
-function withRouter(Component) {
-  function ComponentWithRouterProp(props) {
-    let location = useLocation();
-    let navigate = useNavigate();
-    let params = useParams();
-    return (
-      <Component
-        {...props}
-        router={{ location, navigate, params }}
-      />
-    );
-  }
-
-  return ComponentWithRouterProp;
-}
-
 const Login = (props) => {
 
-  const history = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { from } = location.state || { from: { pathname: '/' } };
   
@@ -60,7 +44,7 @@ const Login = (props) => {
   }
 
   if (auth.user) {
-    return Navigate('/')
+    return Redirect('/')
   } else {
 
     if (isLoading) {

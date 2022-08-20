@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLocation } from 'react-router';
+import { useLocation } from 'react-router-dom';
 import { UserContext } from '../useAuth';
 import g from './g.svg'
 const GoogleSignIn = () => {

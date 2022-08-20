@@ -3,6 +3,9 @@ import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
+//import Login from '../auth/Login/Login'
+//import SignUp from '../auth/SignUp/SignUp'
+
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -45,12 +48,14 @@ const Navbar = ({ toggle }) => {
                             Services
                         </NavLinks>
                     </NavItem>
-                    <NavBtn>
-                        <NavBtnLink style={{background: 'black', border: '#fff solid 1px', borderRadius: '5px', marginRight: '6px'}} to='/signin'>Sign in</NavBtnLink>
-                    </NavBtn>
-                    <NavBtn>
-                        <NavBtnLink to='/createaccount'>Create account</NavBtnLink>
-                    </NavBtn>
+                        <NavBtn>
+                            <NavBtnLink to='/login' style={{background: 'black', border: '#fff solid 1px', borderRadius: '5px', marginRight: '6px'}}>
+                                Sign in
+                            </NavBtnLink>
+                        </NavBtn>
+                        <NavBtn>
+                            <NavBtnLink to='/login' >Create account</NavBtnLink>
+                        </NavBtn> 
                 </NavMenu>
             </NavbarContainer>
         </Nav>
