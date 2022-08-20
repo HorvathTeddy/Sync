@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from '../components/auth/Login/Login'
+//import Login from '../components/auth/Login/Login'
 
 const SigninPage = () => {
   return (
     <div>
-      <Login />
+      Login
     </div>
   )
 }
