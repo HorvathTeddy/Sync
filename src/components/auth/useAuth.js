@@ -4,7 +4,7 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import firebaseConfig from "../firebase.config";
 import axios from 'axios';
-import { useNavigate } from "react-router";
+import { useHistory } from "react-router";
 firebase.initializeApp(firebaseConfig)
 
 let Context = null
@@ -165,7 +165,7 @@ const UserProvider = (props) => {
   provider.setCustomParameters({
     'login_hint': 'your@gmail.com'
   });
-  const history = useNavigate ();
+  const history = useHistory ();
   const signInWithGoogle = async (route) => {
     try {
       const response = await firebase.auth().signInWithPopup(provider);
