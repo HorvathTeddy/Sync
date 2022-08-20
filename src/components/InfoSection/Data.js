@@ -1,5 +1,5 @@
 import img1 from '../../images/svg-1.svg'
-//import img2 from '../../images/svg-2.svg'
+import img2 from '../../images/svg-2.svg'
 import HHD from '../../images/hiphip-dancing.jpg'
 
 
