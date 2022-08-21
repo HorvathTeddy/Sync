@@ -6,48 +6,63 @@ import {
   registerWithEmailAndPassword,
   signInWithGoogle,
 } from "../firebase";
-//import "./Register.css";
+import "./Register.css";
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
   const register = () => {
-    if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(name, email, password);
+    if (!firstName) alert("Please enter name");
+    registerWithEmailAndPassword(email, password);
   };
   useEffect(() => {
     if (loading) return;
     if (user) navigate("/dashboard");
   }, [user, loading]);
   return (
+    <nav className="sync"> Sync
     <div className="register">
+      Create an account with Sync
       <div className="register__container">
+        First Name
         <input
           type="text"
           className="register__textBox"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Full Name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          placeholder=""
         />
+        Last Name
+        <input
+          type="text"
+          className="register__textBox"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          placeholder=""
+        />
+        Email
         <input
           type="text"
           className="register__textBox"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+          placeholder=""
         />
+        Password
         <input
           type="password"
           className="register__textBox"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          placeholder=""
         />
         <button className="register__btn" onClick={register}>
           Register
         </button>
+        <span className="or">- - - or - - -</span>
         <button
           className="register__btn register__google"
           onClick={signInWithGoogle}
@@ -59,6 +74,7 @@ function Register() {
         </div>
       </div>
     </div>
+    </nav>
   );
 }
 export default Register;
