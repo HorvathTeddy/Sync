@@ -25,7 +25,7 @@ function Register() {
   return (
     <nav className="sync"> Sync
     <div className="register">
-      Create an account with Sync
+      Create a Sync account
       <div className="register__container">
         First Name
         <input

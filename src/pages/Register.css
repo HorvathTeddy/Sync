@@ -4,22 +4,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff5349;
+    background-color: #FFFFF0;
     flex-direction: column;
     font-size: 32px;
+    color: black;
+    background-image: url('../images/concert.jpg');
+    background-size: cover;
+    
   }
   .register__container {
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: #dcdcdc;
+    background-color: #FFFFF0;
     padding: 30px;
     height: 575px;
     width: 666px;
     border: 3px solid grey;
     border-radius: 33px;
     justify-content: space-between;
-    color: #101522;
+    color: #000;
     font-size: 21px;
     font-weight: bold;
   }
@@ -35,8 +39,9 @@
     margin-bottom: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #ff5349;
     border-radius: 33px;
+    font-weight: bold;
   }
   .register__google {
     background-color: #4285f4;
