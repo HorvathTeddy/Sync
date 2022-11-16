@@ -1,4 +1,5 @@
 import React from 'react'
+import Register from '../../pages/Register'
 import { Button } from '../ButtonElement'
 import {
 InfoContainer,
@@ -16,7 +17,7 @@ Img } from './InfoElements'
 //import Image1 from '../../images/svg-1.svg'
 //import { homeObjOne } from './Data'
 
-const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart}) => {
+const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, buttonName, to}) => {
   return (
     <>
       <InfoContainer id={id}>
@@ -34,8 +35,8 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart}) =
                         {description}
                     </Subtitle>
                     <BtnWrap>
-                        <Button to='services' smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                          Learn more
+                        <Button to={to} smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                          {buttonName}
                         </Button>
                     </BtnWrap>
                 </TextWrapper>

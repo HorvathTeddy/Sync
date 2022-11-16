@@ -7,6 +7,7 @@ import {
   signInWithGoogle,
 } from "../firebase";
 import "./Register.css";
+
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,14 +17,14 @@ function Register() {
   const navigate = useNavigate();
   const register = () => {
     if (!firstName) alert("Please enter name");
-    registerWithEmailAndPassword(email, password);
+    registerWithEmailAndPassword(firstName + lastName, email, password);
   };
   useEffect(() => {
     if (loading) return;
     if (user) navigate("/dashboard");
   }, [user, loading]);
   return (
-    <nav className="sync"> Sync
+    <nav><Link to='/' className="sync">Sync</Link>
     <div className="register">
       Create a Sync account
       <div className="register__container">
@@ -70,7 +71,7 @@ function Register() {
           Register with Google
         </button>
         <div>
-          Already have an account? <Link to="/">Login</Link> now.
+          Already have an account? <Link to="/login">Login</Link> now.
         </div>
       </div>
     </div>

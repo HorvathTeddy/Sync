@@ -1,7 +1,7 @@
 import img1 from '../../images/svg-1.svg'
 import img2 from '../../images/svg-2.svg'
 import HHD from '../../images/hiphip-dancing.jpg'
-
+import RP from '../../images/record-player.jpg'
 
 export const homeObjOne = 
 {
@@ -11,18 +11,22 @@ export const homeObjOne =
     description: 'Sign up as a producer, lyricist, or both and start collaborating with artists on the platform!',
     alt: 'Guitarist',
     imgStart: true,
-    img: HHD   
+    img: HHD,
+    buttonName: 'Learn More',
+    to: 'services'   
 }
 
 export const homeObjTwo = 
 {
-    id: 'services',
+    id: 'discover',
     topLine: 'Create your dream',
     headLine: 'We offer technology that connects you with people that can help you create your dream music!',
     description: 'Sync is made for artists',
     alt: 'link',
     imgStart: false,
-    img: HHD  
+    img: RP,
+    buttonName: 'Register',
+    to: 'home'
 }
 
 

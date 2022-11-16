@@ -30,7 +30,7 @@ const HeroSection = () => {
                 Create an account and start collaborating. First week is on us!
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='/createaccount' onMouseEnter={onHover} onMouseLeave={onHover}  >
+                <Button to='mission' smooth={true} duration={500} spy={true} exact='true' offset={-80} onMouseEnter={onHover} onMouseLeave={onHover}  >
                     Get started {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>

@@ -42,9 +42,11 @@
     background-color: #ff5349;
     border-radius: 33px;
     font-weight: bold;
+    cursor: pointer;
   }
   .register__google {
     background-color: #4285f4;
+    cursor: pointer;
   }
   .register div {
     margin-top: 7px;
@@ -65,6 +67,7 @@
     position: sticky;
     z-index: 10;
     top: 0;
+    text-decoration: none;
 }
 
 .or 
